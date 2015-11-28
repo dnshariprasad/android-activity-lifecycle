@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -21,7 +22,6 @@ import android.widget.Button;
 
 //on Back button pressed                    - onPause > onStop > onDestroy
 //on finish                                 - onPause > onStop > onDestroy
-
 
 
 public class MainActivity extends AppCompatActivity {
@@ -118,4 +118,17 @@ public class MainActivity extends AppCompatActivity {
         super.onBackPressed();
         Log.d(TAG, "onBackPressed");
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.d(TAG, "onSaveInstanceState");
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.d(TAG, "onRestoreInstanceState");
+    }
+
 }
