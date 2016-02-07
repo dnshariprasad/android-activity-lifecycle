@@ -28,3 +28,7 @@ On Activity starting for the first time - onCreate > onStart > onResume
 * On back button pressed - onPause > onStop > onDestroy
 
 * On finish - onPause > onStop > onDestroy
+
+
+
+[ABCS of Android](Link http://abcsofandroid.blogspot.in/2015/11/activity-life-cycle.html)
