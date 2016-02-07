@@ -23,7 +23,7 @@ On Activity starting for the first time - onCreate > onStart > onResume
      
      On moving back to previous activity - onRestart > onStart > onResume
 
-**On Destroyed state :**
+**To Destroyed state :**
 
 * On back button pressed - onPause > onStop > onDestroy
 
