@@ -16,12 +16,12 @@ On Activity starting for the first time - onCreate > onStart > onResume
 
 * On minimising Activity - onPause > onStop
 
-* On reopening a minimised Activity - onRestart > onStart > onResume
+  On reopening a minimised Activity - onRestart > onStart > onResume
 
 
 * On opening other activity through Intent - onPause > onStop
 
-* On moving back to previous activity - onRestart > onStart > onResume
+  On moving back to previous activity - onRestart > onStart > onResume
 
 **On Destroyed state :**
 
